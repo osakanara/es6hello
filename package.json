@@ -10,6 +10,14 @@
   },
   "author": "osakanara",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osakanara/es6hello.git"
+  },
+  "bugs": {
+    "url": "https://github.com/osakanara/es6hello/issues"
+  },
+  "homepage": "https://github.com/osakanara/es6hello#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
