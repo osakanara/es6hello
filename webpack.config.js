@@ -17,6 +17,8 @@ module.exports = {
     // ブラウザからバンドルにアクセスする際、以下のようにする
     // <script src="js/app.js"></script>
     output: {
+        // バンドルをファイルとして出力
+        path: path.join(__dirname, "dist"),
         publicPath: "/js/",
         // entryのキーがnameになる
         filename: '[name].js',
