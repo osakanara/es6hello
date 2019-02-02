@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+</head>
+<body>
+<script src="main.js"></script>
+<!-- jsがリロードされるとき、main.jsという実態のないファイルがメモリ上にできる-->
+<script>
+    const greeting = new Greeting();
+    alert(greeting.sayHello());
+    </script>
+</body>
+</html>
