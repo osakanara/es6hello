@@ -26,5 +26,29 @@ module.exports = {
         library: ["com", "example"],
         // ライブラリ化の方式：Universal Module Definition
         libraryTarget: 'umd'
-    }
+    },
+    // Babelとの連携
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            [
+                                "@babel/preset-env",
+                                {
+                                    "useBuiltIns": "usage",
+                                    "targets": "> 0.25%, not dead"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    devtool: 'inline-source-map'
 };
